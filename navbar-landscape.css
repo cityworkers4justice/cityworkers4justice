@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+ * Navigation Bar Styling
+ */
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  min-height: 10vw;
+}
+
+#logo-img {
+  margin: 5px 0 0 10px;
+  height: 8vw;
+}
+
+#nav-bar-toggle {
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+.nav-bar-list {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+/* .nav-links:hover, .nav-bar-list li:hover {
+  background-color: rgb(170, 125, 57);
+  color: black;
+} */
+
+/*
+ * Navigation Dropdown Styling
+ */
+
+.nav-dropdown {
+  display: none;
+}
+
+.active-nav-dropdown {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: white;
+  align-items: center;
+}
+
+.nav-dropdown-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+
+.nav-dropdown-list li {
+  display: flex;
+  align-items: center;
+  height: 10vw;
+  border-left: 10px solid #BC714B;
+  background: #E8B592;
+  margin: 0.2em 0;
+  cursor: pointer;
+}
+
+.nav-dropdown-list li a {
+  font-size: 4vw;
+  margin-left: 0.3em;
+}
+
+/***********************************************************/
+
+main {
+  flex: 1;
+}
+
+.active-main {
+  flex: 0;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  background-color: #333;
+}
+
+footer i {
+  font-size: 4vw;
+  color: white;
+  padding: 0.3em;
+}
+
+footer p {
+  flex: 1;
+  text-align: end;
+  align-self: center;
+  padding: .2em .5em;
+  color: white;
+  font-family: 'roboto', sans-serif;
+  font-size: 0.75em;
+}
+
+/* (768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .nav-bar-list {
+    display: flex;
+    margin-right: 2em;
+  }
+
+  .nav-links {
+    padding: 0 0.7em;
+  }
+
+  #nav-bar-toggle {
+    display: none;
+  }
+
+  .nav-dropdown {
+    display: none;
+  }
+
+}
