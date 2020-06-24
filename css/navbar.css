@@ -154,4 +154,15 @@ footer p {
   }
 }
 
+/* size dropdown links in landscape mode */
+@media (orientation: landscape) and (max-width: 812px ) {
+  footer i {
+    font-size: 4vw;
+  }
+
+  #logo-img {
+    margin: 5px 0 0 10px;
+    height: 8vw;
+  }
+}
 /* TODO: use media query for landscape and phone type width (e.g. width 800px or less) and change logo and social icons sizes to be based on vw instead of vh, dont want this for desktop layout as icons become to large and header/footer take up to much space.
