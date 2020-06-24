@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 
 main {
   flex: 1;
@@ -146,23 +147,6 @@ main {
     position: absolute;
     display: flex;
   }
-
-
 }
-
-/*
-PHONES
-                       W      H
-Galaxy S9         -> 360px x 740px
-iPhone 5/SE       -> 320px x 568px
-iPhone 6/7/8      -> 375px x 667px
-iPhone 6/7/8 Plus -> 414px x 763px
-iPhone X/XS       -> 375px x 812px
-Pixel 2           -> 411px x 731px
-
-TABLETS
-                       W      H
-iPad              -> 768px x 1024px
-iPad Pro          -> 834px x 1112px
 
 
