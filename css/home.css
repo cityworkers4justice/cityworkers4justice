@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+main {
+  flex: 1;
+  background: #8E583D;
+}
+
+.active-main {
+  display: none;
+}
+
+#background {
+  width: 100%;
+  height: 56.36%;
+  position: absolute;
+  top: 0;
+  background-image: url("../images/2020-06-08-171417.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#background-cover {
+  width: 100%;
+  height: 56.36%;
+  position: absolute;
+  top: 0;
+  background: #8E583D;
+  opacity: 70%;
+}
+
+#group-name {
+  color: white;
+  position: absolute;
+  z-index: 3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  margin-left: 2%;
+  top: 24%;
+}
+
+.animated-quotes {
+  position: absolute;
+  z-index: 3;
+  top: 56%;
+  width: 34vh;
+  height: 34vh;
+  left: 1rem;
+}
+
+@keyframes quotesFadeInOut {
+  0% {
+    opacity: 0;
+  }
+  6.6% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+  }
+  39.9% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#animated-quote-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+  animation-name: quotesFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  opacity: 0;
+  animation-delay: 10s;
+}
+
+#animated-quote-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+  animation-name: quotesFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  opacity: 0;
+  animation-delay: 5s;
+}
+
+#animated-quote-3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+  animation-name: quotesFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  animation-delay: 0s;
+}
+
+.static-quotes {
+  top: 62%;
+  display: none;
+  width: 100vw;
+  height: 30vh;
+  left: 0;
+}
+
+.static-quotes img {
+  object-fit: scale-down;
+}
+
+/* In portrait mode and screen is 854px or wider 
+ *                    -OR-
+ * In landscape mode and screen is 540px or wider
+ */
+@media (orientation: portrait) and (min-width: 854px), (orientation: landscape) and (min-width: 540px){
+
+  #group-name {
+    font-size: 2em;
+  }
+
+  .animated-quotes {
+    display: none;
+  }
+
+  .animated-quote-1 {
+    animation-play-state: paused;
+  }
+
+  .animated-quote-2 {
+    animation-play-state: paused;
+  }
+
+  .animated-quote-3 {
+    animation-play-state: paused;
+  }
+
+  .static-quotes {
+    position: absolute;
+    display: flex;
+  }
+
+
+}
+
+/*
+PHONES
+                       W      H
+Galaxy S9         -> 360px x 740px
+iPhone 5/SE       -> 320px x 568px
+iPhone 6/7/8      -> 375px x 667px
+iPhone 6/7/8 Plus -> 414px x 763px
+iPhone X/XS       -> 375px x 812px
+Pixel 2           -> 411px x 731px
+
+TABLETS
+                       W      H
+iPad              -> 768px x 1024px
+iPad Pro          -> 834px x 1112px
+
+
