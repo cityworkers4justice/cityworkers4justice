@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+main {
+  flex: 1;
+  background: #8E583D;
+}
+
+.active-main {
+  display: none;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-image: url("../images/future.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#background-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #8E583D;
+  opacity: 90%;
+}
+
+#press-container {
+  position: relative;
+  z-index: 3;
+  padding: 0 1em;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 1em;
+}
+
+#pg-title {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 3em;
+  padding-bottom: 0.2em;
+}
+
+#press-container li {
+  margin: 1em 1em;
+  line-height: 1.3em;;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 1em;
+}
+
+#press-container h3 {
+
+}
+
+#press-container a {
+  color: white;
+}
+
+/* In portrait mode and screen is 854px or wider 
+ *                    -OR-
+ * In landscape mode and screen is 540px or wider
+ */
+@media (orientation: portrait) and (min-width: 854px), (orientation: landscape) and (min-width: 540px){
+
+}
+
+

@@ -96,6 +96,9 @@ body {
 .nav-dropdown-list li a {
   font-size: 4vw;
   margin-left: 0.3em;
+  width: 100%;
+  height: 100%;
+  padding: 4vh 0;
 }
 
 /* footer styling */
@@ -104,6 +107,7 @@ footer {
   display: flex;
   width: 100%;
   background-color: #333;
+  z-index: 3;
 }
 
 footer i {
@@ -149,3 +153,5 @@ footer p {
     height: 7vw;
   }
 }
+
+/* TODO: use media query for landscape and phone type width (e.g. width 800px or less) and change logo and social icons sizes to be based on vw instead of vh, dont want this for desktop layout as icons become to large and header/footer take up to much space.

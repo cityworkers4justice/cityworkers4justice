@@ -24,13 +24,24 @@ main {
   font-size: 3em;
 }
 
-.main-content p {
-  font-family: 'Roboto', sans-serif;
-  color: white;
+#demands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (min-width: 1440px) {
-  main {
-    padding: 0 18em 0 2em;
+#demands img {
+  padding: 1em;
+  width: 40vh;
+}
+
+@media (orientation: landscape) {
+
+  #demands {
+    flex-direction: row;
+  }
+
+  #demands img {
+    width: 40vw;
   }
 }
